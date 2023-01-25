@@ -1,5 +1,5 @@
 The Chain of Responsibility Pattern:
-The Chain of Responsibility design pattern. This pattern is
+This pattern is
 all about connecting objects in a chain of notification; as a notification travels
 down the chain, it’s handled by the first object that is set up to deal with the
 particular notification.
