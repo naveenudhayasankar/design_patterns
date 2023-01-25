@@ -48,3 +48,12 @@ there’s no possibility of creating more than one object, so there’s not goin
 be any conflict between threads. You’ve removed all the overhead involved
 with synchronizing code just by taking the object-creation code out of the
 getInstance method.
+
+Subclassing a
+singleton is not a good idea — at best, the constructor will have to be made protected, which
+means various subclasses can work with it. If
+you’re in a situation where you think you have
+to start subclassing a singleton, better think
+twice — is the object you’re working with really
+a singleton? If so, why do you need to subclass
+it at all?
